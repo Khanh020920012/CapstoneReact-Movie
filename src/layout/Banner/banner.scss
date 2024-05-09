@@ -1,0 +1,66 @@
+.carousel_banner {
+  position: relative;
+  margin-bottom: 70px;
+  margin-top: 75px;
+  .slick-next {
+    // background-color: trasp;
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    color: white;
+    font-size: 50px;
+    &::before {
+      display: none;
+    }
+  }
+  .slick-prev {
+    left: 30px;
+    color: white;
+    font-size: 50px;
+    z-index: 2;
+    &::before {
+      display: none;
+    }
+  }
+  .slick-next,
+  .slick-prev {
+    transition: all 0.3 ease;
+  }
+
+  .fa-chevron-right:hover,
+  .fa-chevron-left:hover {
+    color: white;
+    opacity: 0.6;
+  }
+
+  .text-center {
+    position: relative;
+    width: 100%;
+    // height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel_banner {
+    position: relative;
+  }
+
+  .carousel_banner img {
+    width: 100%;
+  }
+
+  .play-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .icon_content {
+    font-size: 80px;
+    width: 100px;
+    height: 100px;
+    color: white;
+  }
+}

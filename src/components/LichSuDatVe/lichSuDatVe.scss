@@ -1,0 +1,99 @@
+.history_item {
+  border-left: 2px solid #8e8989;
+
+  max-width: 90%;
+  margin: auto;
+  justify-content: space-between; /* Chia không gian ngang đều giữa các phần tử con */
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .info_item {
+    border-bottom: 2px solid #8e8989;
+    padding: 20px 0 !important;
+    align-items: center;
+    width: 200%;
+    gap: 8px;
+    
+  }
+  .info_item1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 2px solid #8e8989;
+    border-right: 2px solid #8e8989;
+    padding: 20px 0 ;
+  }
+}
+.flex {
+  padding-bottom: 0 !important;
+}
+.border_left {
+  border-bottom: 2px solid #8e8989;
+}
+.text_item {
+  font-size: 18px;
+}
+.lichSu_item {
+  border-left: 2px solid #8e8989;
+  background-color: #ad2d19;
+  border-bottom: 2px solid #8e8989;
+}
+
+.lichsu_item {
+  max-width: 90%;
+  margin: 10px auto;
+
+  padding: 10px;
+  flex: 1 1 300px;
+
+  border-radius: 5px;
+  min-width: 300px;
+  min-height: 200px;
+}
+.lichSu_content {
+  margin: 20px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-items: stretch;
+}
+.lichsu_item {
+  background-color: #fff;
+  border-radius: 10px;
+
+  box-sizing: border-box;
+  /* Đảm bảo kích thước tính cả padding và border */
+  width: calc(50% - 20px); /* Đảm bảo các phần tử chia ngang đều */
+}
+@media screen and (max-width: 1024px) {
+  .history_item {
+    max-width: 100%;
+  }
+
+  .lichsu_item {
+    max-width: calc(50% - 20px);
+  }
+  .lichSu_item h2 {
+    font-size: 20px;
+  }
+  .info_item {
+    font-size: 20px;
+  }
+  .info_content h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .history_item {
+    max-width: 100%;
+  }
+  .lichsu_item {
+    max-width: calc(100% - 20px);
+  }
+  .lichSu_content {
+    grid-template-columns: 1fr; /* Chuyển sang một cột khi màn hình nhỏ hơn 768px */
+  }
+}
+/* Thêm đoạn CSS sau để điều chỉnh kích thước và khoảng cách giữa các phần tử */
