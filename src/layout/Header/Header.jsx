@@ -59,48 +59,43 @@ const Header = () => {
           <div>
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
               <li>
-
-                
-                <NavLink
+                <Link
                   className="block cursor-pointer  py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-cyan-600 lg:p-0"
-                  to="/#lichChieu"
-
+                  to="lichChieu"
+                  smoother={true}
+                  duration={1500}
                 >
                   Lịch chiếu
-                </NavLink>
+                </Link>
               </li>
               <li>
-
-              
-                <NavLink
+                <Link
                   className="block cursor-pointer  py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-cyan-600 lg:p-0"
-                  to="/#cumRap"
-
-               
-
+                  to="cumRap"
+                  smoother={true}
+                  duration={1500}
                 >
                   Cụm rạp
-                </NavLink>
+                </Link>
               </li>
               <li>
-              
-                <NavLink
+                <Link
                   className="block cursor-pointer  py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-cyan-600 lg:p-0"
-                  to="/#tinTuc"
+                  to="tinTuc"
+                  smoother={true}
+                  duration={1500}
                 >
                   Tin tức
-                </NavLink>
+                </Link>
               </li>
               <li>
-              
-                <NavLink
+                <Link
                   className="block cursor-pointer  py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-cyan-600 lg:p-0"
-                  to="/#ungDung"
+                  to="ungDung"
                 >
                   Ứng dụng
-                </NavLink>
+                </Link>
               </li>
-              
             </ul>
           </div>
         </div>

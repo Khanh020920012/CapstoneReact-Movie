@@ -33,7 +33,11 @@ export default function LichChieuCumRap() {
               return {
                 label: (
                   <div className="img-content ">
-                    <img className="w-16 opacity-100 hover:opacity-70 " src={cumrap.logo} />,
+                    <img
+                      className="w-16 opacity-100 hover:opacity-70 "
+                      src={cumrap.logo}
+                    />
+                    ,
                   </div>
                 ),
                 key: cumrap.maHeThongRap,

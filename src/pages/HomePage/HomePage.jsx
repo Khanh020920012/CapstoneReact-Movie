@@ -10,31 +10,31 @@ import Application from "../../layout/Application/Application";
 import ScrollToTopButton from "../../layout/ScrollToTopButton/ScrollToTopButton";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
+  // const { hash } = useLocation();
 
-  const { hash } = useLocation();
-
-  useEffect(() => {
-    if (hash) {
-      const element = document.querySelector(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    } else {
-      window.scrollTo({ top: 0, behavior: "smooth" }); // Di chuyển đến đầu trang nếu không có hash
-    }
-  }, [hash]);
-  // const notify = useContext(NotifyContext);
+  // useEffect(() => {
+  //   if (hash) {
+  //     const element = document.querySelector(hash);
+  //     if (element) {
+  //       element.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   } else {
+  //     window.scrollTo({ top: 0, behavior: "smooth" }); // Di chuyển đến đầu trang nếu không có hash
+  //   }
+  // }, [hash]);
+  // // const notify = useContext(NotifyContext);
 
   return (
     <div>
       {/* header  */}
       <Header />
-      <a href="/#lichChieu"></a>
-      <a href="/#cumRap"></a>
-      <a href="/#tinTuc"></a>
-      <a href="/#ungDung"></a>
+      {/* <Link to="/#lichChieu"></Link> */}
+      {/* <Link to="/#cumRap"></Link> */}
+      {/* <Link to="/#tinTuc"></Link>
+      <Link to="/#ungDung"></Link> */}
 
       {/* banner  */}
       <Banner />
