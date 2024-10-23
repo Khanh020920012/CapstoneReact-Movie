@@ -4,7 +4,7 @@ import { startLoading, stopLoading } from "../redux/slice/loadingSlice";
 import { store } from "../redux/configStore";
 export const http = axios.create({
   // Your axios configurations
-  baseURL: "https://movienew.cybersoft.edu.vn/api/",
+  baseURL: "https://movienew.cybersoft.edu.vn/api",
   headers: {
     tokenCybersoft:
       "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5Mb3AiOiJCb290Y2FtcCBTXHUwMGUxbmcgMTAiLCJIZXRIYW5TdHJpbmciOiIzMS8xMi8yMDI1IiwiSGV0SGFuVGltZSI6MTc2NzIyNTU5OTAwMCwibmJmIjoxNjk4Njg1MjAwLCJleHAiOjE3NjcyMjU1OTl9.loRPS1RZwfJ0WEe5S9bQER2C0PiRLuJ-8r3CREErSLs",
